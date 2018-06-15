@@ -45,17 +45,17 @@ Result image:
 
 #### 2. Explain how you settled on your final choice of HOG parameters.
 
-I tried various combinations of parameters after I finished the entire project. Based on the best performance I found, I selected orientation = 32, pixel per cell = 16, cell per block = 2, color space of input image was YCrCb, and use all color channels to extract the hog feature. Since I believe the color feature and spatial feature won't help the vehicle detection, so I would use hog feature only.
+I tried various combinations of parameters after I finished the entire project. Based on the best performance I found, I selected orientation = 11, pixel per cell = 16, cell per block = 2, color space of input image was YUV, and use all color channels to extract the hog feature. Since I believe the color feature and spatial feature won't help the vehicle detection, so I would use hog feature only.
 
 #### 3. Describe how (and identify where in your code) you trained a classifier using your selected HOG features (and color features if you used them).
 
-I trained a linear SVM using 8500 samples for both vehicle and non-vehicle. 80% for training, 20% for testing. The accuracy rate was 97%. Code was at cell 6 of jupyter notebook.
+I trained a linear SVM using 8500 samples for both vehicle and non-vehicle. 80% for training, 20% for testing. The accuracy rate was 97.38%. Code was at cell 6 of jupyter notebook.
 
 ### Sliding Window Search
 
 #### 1. Describe how (and identify where in your code) you implemented a sliding window search.  How did you decide what scales to search and how much to overlap windows?
 
-I used 96 x 96 window size and 0.5 overlap for both x and y. Since this was the default setting of the course, and the performance was also pretty good, so I won't change this.
+I used 64 x 64 window size and 0.5 overlap for both x and y. Since this was the default setting of the course, and the performance was also pretty good, so I won't change this.
 ![alt text][image2]
 
 #### 2. Show some examples of test images to demonstrate how your pipeline is working.  What did you do to optimize the performance of your classifier?
