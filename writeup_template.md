@@ -15,7 +15,12 @@ The goals / steps of this project are the following:
 * Estimate a bounding box for vehicles detected.
 
 [//]: # (Image References)
-[image1]: ./result/img1.png
+[image1]: ./result/img1.PNG
+[image2]: ./result/img2.PNG
+[image3]: ./result/img3.PNG
+[image4]: ./result/img4.PNG
+[image5]: ./result/img5.PNG
+[image6]: ./result/img6.PNG
 [video1]: ./project_video.mp4
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
