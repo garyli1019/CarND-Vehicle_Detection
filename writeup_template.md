@@ -74,8 +74,12 @@ I used the heatmap method introduced by the lecture. Every frame of the video wi
 
 ![alt text][image4]
 
-### Here the resulting bounding boxes are drawn onto the last frame in the series:
+### Gray image after applied the threshold:
+
 ![alt text][image5]
+
+### Here the resulting bounding boxes are drawn onto the image:
+![alt text][image6]
 
 
 
@@ -85,5 +89,5 @@ I used the heatmap method introduced by the lecture. Every frame of the video wi
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
+Each frame was independent to each other, so detection errors could happened in anywhere. If we combine the heatmaps filtering with the sequence of images, to make sure detection area are close to previous frame, then the result will be more robust.  
 
